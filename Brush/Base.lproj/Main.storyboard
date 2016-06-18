@@ -17,17 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MIq-mR-jgG">
-                                <rect key="frame" x="40" y="192" width="240" height="128"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="j92-U4-Tdr">
+                                <rect key="frame" x="18" y="468" width="284" height="31"/>
+                                <connections>
+                                    <action selector="slider1:" destination="BYZ-38-t0r" eventType="valueChanged" id="ViE-5m-kIE"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="D4F-YW-F6E">
+                                <rect key="frame" x="18" y="506" width="284" height="31"/>
+                                <connections>
+                                    <action selector="slider2:" destination="BYZ-38-t0r" eventType="valueChanged" id="6nm-uR-osC"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xr7-cC-fpv" customClass="MenuView" customModule="Brush" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="257" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="menuView" destination="xr7-cC-fpv" id="wt5-DV-Zp7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="401" y="400"/>
         </scene>
     </scenes>
 </document>
